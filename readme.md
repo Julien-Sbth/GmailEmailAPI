@@ -1,48 +1,52 @@
 # Gmail API Email Processor 📧
 
-Un outil puissant pour automatiser le traitement des emails via l'API Gmail avec des fonctionnalités avancées de classification et d'étiquetage.
+A powerful tool to automate email processing via the Gmail API with advanced classification and tagging features.
 
-![Gmail API](https://img.shields.io/badge/Gmail_API-1.0.0-blue) ![Python](https://img.shields.io/badge/Python-3.8%2B-green)
+![Gmail API](https://img.shields.io/badge/Gmail_API-1.0.0-blue)! [Python](https://img.shields.io/badge/Python-3.8%2B-green)
 
-## ✨ Fonctionnalités principales
+## ✨ Main features
 
-- **Authentification sécurisée** : 
-  - Intégration OAuth2 avec gestion automatique des tokens
-  - Support multi-compte (configuration facile)
+- **Secure authentication** : 
+  - OAuth2 integration with automatic token management
   
-- **Traitement intelligent des emails** :
-  - Filtrage avancé par requêtes personnalisables
-  - Classification automatique par catégories
-  - Gestion des labels (création, application, suppression)
-  
-- **Support international** :
-  - Interface multilingue (FR/EN)
-  - Prise en charge des caractères spéciaux
+- **Intelligent email processing**:
+  - Automatic classification by categories
+  - Management of labels (creation, application, deletion)
 
-## 📋 Prérequis
+## 📋 Prerequisites
 
 - Python 3.8+
-- Compte Google avec accès API activé
-- Projet configuré dans [Google Cloud Console](https://console.cloud.google.com/)
+- Google account with API access enabled
+- Project configured in [Google Cloud Console](https://console.cloud.google.com/)
 
-## 🚀 Installation rapide
+## 🚀 Quick installation
 
-1. Cloner le dépôt :
+### Clone the repository:
 ```bash
-git clone https://github.com/votre-repo/gmail-api-email-processor.git
+git clone https://github.com/your-repo/gmail-api-email-processor.git
 
 cd gmail-api-email-processor
 ```
-    Installer les dépendances :
+## Install dependencies:
+```bash
 pip install -r requirements.txt
+```bash
+### 🔐 Credentials
+
+1. Go to [Google Cloud Console] (https://console.cloud.google.com/).
+2. Creates a new project (or uses an existing one).
+3. Enable the Gmail API for this project.
+4. In the "Identifiers" menu, click on "Create identifiers" > OAuth 2.0 client ID":
+   - Application type: select "Desktop Application"
+5. Downloads the generated file (‘json’ file).
+6. Rename this file to `credentials.json’.
+7. Move it to the project root (in the same folder as your Python script).
 ```
 
-    Configurer les credentials :
+## ✅ Run the script
 
-        Créer un projet dans Google Cloud Console
-
-        Activer l'API Gmail
-
-        Générer des credentials OAuth 2.0 (type "Application de bureau")
-
-        Télécharger le fichier credentials.json dans le dossier du projet
+Once the above steps are completed, you can run the main script:
+```
+python main.py
+```
+On the first launch, a window will open to log in to your Google account. A token.json file will be automatically generated for subsequent connections.
