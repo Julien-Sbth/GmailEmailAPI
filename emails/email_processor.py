@@ -1,5 +1,5 @@
 from datetime import datetime, timedelta
-from config import EMAIL_QUERY, PROCESSING_CONFIG
+from utils.config import EMAIL_QUERY, PROCESSING_CONFIG
 import logging
 
 logger = logging.getLogger(__name__)

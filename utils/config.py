@@ -1,7 +1,7 @@
 import os
 
-TOKEN_FILE = os.getenv('GMAIL_TOKEN_FILE', 'token.json')
-CREDENTIALS_FILE = os.getenv('GMAIL_CREDENTIALS_FILE', 'credentials.json')
+TOKEN_FILE = os.getenv('GMAIL_TOKEN_FILE', '../token.json')
+CREDENTIALS_FILE = os.getenv('GMAIL_CREDENTIALS_FILE', '../credentials.json')
 
 SCOPES = ['https://www.googleapis.com/auth/gmail.modify']
 

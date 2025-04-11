@@ -3,7 +3,7 @@ from google_auth_oauthlib.flow import InstalledAppFlow
 from googleapiclient.discovery import build
 import json
 import google.auth.transport.requests
-from config import TOKEN_FILE, CREDENTIALS_FILE, SCOPES
+from utils.config import TOKEN_FILE, CREDENTIALS_FILE, SCOPES
 import os
 
 def get_gmail_service():

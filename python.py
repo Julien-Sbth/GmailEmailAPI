@@ -1,6 +1,6 @@
 from auth import get_gmail_service
-from email_processor import process_emails
-from logger import logger
+from emails.email_processor import process_emails
+from utils.logger import logger
 
 if __name__ == '__main__':
     try:
